@@ -86,6 +86,9 @@ const BoundingBox = () => {
                 onMouseDown={handleMouseDown}
                 onMouseMove={handleMouseMove}
                 onMouseUp={handleMouseUp}
+                onTouchStart={handleMouseUp}
+                onTouchEnd={handleMouseDown}
+                onTouchMove={handleMouseMove}
                 width={350} height={350} style={{border: "1px solid black"}} ></canvas>
             </div>
             <img ref={imageRef} style={{display: "none"}} src='https://i.imgur.com/3fwi40p.jpg' />
